@@ -7,7 +7,6 @@ const Canvas = () => {
   useEffect(() => {
     Scene.setup(canvasRef.current);
   });
-  console.log("Canvas");
   return (
     <canvas
       ref={canvasRef}

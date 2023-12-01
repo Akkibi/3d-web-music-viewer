@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Canvas } from "./components/Canvas";
+import { Canvas } from "./components/Canvas.jsx";
 
 function App() {
   return (

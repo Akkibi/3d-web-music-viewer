@@ -1,9 +1,15 @@
 import AudioController from "./AudioController.js";
+import Scene from "./../webgl/Scene.js";
 const Song = ({ data }) => {
+  console.log(data);
+  const pickSong = () => {
+    AudioController.updateSong(data.preview);
+    Scene.plane.updateCover(data.album.cover_xl);
+  };
   return (
     <div
       className="hover:text-white w-[50vh] text-gray-400 gap-5  px-2 h-14 bg-[rgba(0,0,0,0.5)] border-2 border-solid border-[rgba(0,0,0,0.5)] rounded-lg flex justify-between"
-      onClick={() => AudioController.updateSong(data.preview)}
+      onClick={pickSong}
     >
       <img
         src={data.album.cover_small}
