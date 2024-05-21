@@ -147,19 +147,18 @@ class SCENE {
     this.board = new Board();
     this.plane = new Plane();
 
-    // this.scene.add(this.plane);
     this.selectedObject = this.plane;
 
-    this.bloomPass.strength = 0.25;
+    this.bloomPass.strength = 0.2;
     this.scene.add(this.selectedObject.group);
 
     this.camera.position.z = 55;
   }
   setupGLFTLoader() {
     this.gltfLoader = new GLTFLoader();
-    this.gltfLoader.load("./logo-iut.glb", (gltf) => {
-      this.scene.add(gltf.scene);
-    });
+    // this.gltfLoader.load("./logo-iut.glb", (gltf) => {
+    //   this.scene.add(gltf.scene);
+    // });
   }
   pickvisualizer(index) {
     this.scene.remove(this.selectedObject.group);
@@ -170,7 +169,7 @@ class SCENE {
         break;
       case 1:
         this.selectedObject = this.line;
-        this.bloomPass.strength = 1;
+        this.bloomPass.strength = 0.5;
         break;
       case 2:
         this.selectedObject = this.LogoIut;
@@ -178,7 +177,7 @@ class SCENE {
         break;
       case 3:
         this.selectedObject = this.board;
-        this.bloomPass.strength = 0.5;
+        this.bloomPass.strength = 0.4;
         break;
       case 4:
         this.selectedObject = this.plane;

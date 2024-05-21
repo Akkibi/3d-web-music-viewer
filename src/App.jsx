@@ -1,6 +1,6 @@
 import Canvas from "./components/Canvas.jsx";
 import Search from "./components/Search.jsx";
-import Song from "./components/song.jsx";
+import Song from "./components/Song.jsx";
 import useCustomStore from "./customStore.js";
 import Picker from "./components/Picker.jsx";
 

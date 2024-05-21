@@ -16,8 +16,8 @@ const Picker = () => {
           pickvisualizer(0), setSelected(0);
         }}
       >
-        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-thin">
-          Cube
+        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-bold">
+          → Cube
         </p>
       </div>
       {" / "}
@@ -27,8 +27,8 @@ const Picker = () => {
           pickvisualizer(1), setSelected(1);
         }}
       >
-        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-thin">
-          Line
+        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-bold">
+          → Line
         </p>
       </div>
       {" / "}
@@ -38,8 +38,8 @@ const Picker = () => {
           pickvisualizer(2), setSelected(2);
         }}
       >
-        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-thin">
-          Logo
+        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-bold">
+          → Logo
         </p>
       </div>
       {" / "}
@@ -49,8 +49,8 @@ const Picker = () => {
           pickvisualizer(3), setSelected(3);
         }}
       >
-        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-thin">
-          Board
+        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-bold">
+          → Board
         </p>
       </div>
       {" / "}
@@ -60,8 +60,8 @@ const Picker = () => {
           pickvisualizer(4), setSelected(4);
         }}
       >
-        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-thin">
-          Cover
+        <p className="text-2xl text-white hover:opacity-100 opacity-50 font-bold">
+          → Cover
         </p>
       </div>
       <svg
